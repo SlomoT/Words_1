@@ -1,6 +1,5 @@
 package com.example.sunduoduo.words;
 
-import android.animation.FloatArrayEvaluator;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -9,6 +8,7 @@ import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -17,7 +17,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TableLayout;
-
 
 
 public class MainActivity extends AppCompatActivity implements WordItemFragment.OnFragmentInteractionListener,
