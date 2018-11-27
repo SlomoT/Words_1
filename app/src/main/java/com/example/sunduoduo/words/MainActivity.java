@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements WordItemFragment.
      * 更新单词列表
      */
     private void RefreshWordItemFragment() {
-        WordItemFragment wordItemFragment = (WordItemFragment) getFragmentManager().findFragmentById(R.id.wordslist);
+        WordItemFragment wordItemFragment = (WordItemFragment)getSupportFragmentManager().findFragmentById(R.id.wordslist);
         wordItemFragment.refreshWordsList();
     }
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements WordItemFragment.
      * 更新单词列表
      */
     private void RefreshWordItemFragment(String strWord) {
-        WordItemFragment wordItemFragment = (WordItemFragment) getFragmentManager().findFragmentById(R.id.wordslist);
+        WordItemFragment wordItemFragment = (WordItemFragment) getSupportFragmentManager().findFragmentById(R.id.wordslist);
         wordItemFragment.refreshWordsList(strWord);
     }
 
