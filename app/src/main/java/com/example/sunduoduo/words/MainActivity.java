@@ -286,6 +286,7 @@ public class MainActivity extends AppCompatActivity implements WordItemFragment.
      * 当用户在单词列表Fragment中单击某个单词时回调此函数
      * 判断如果横屏的话，则需要在右侧单词详细Fragment中显示
      */
+
     @Override
     public void onWordItemClick(String id) {
 
@@ -297,18 +298,21 @@ public class MainActivity extends AppCompatActivity implements WordItemFragment.
             startActivity(intent);
         }
 
+
     }
 
     public void M2Activity(){
         Intent intent = new Intent(MainActivity.this,Main2Activity.class);
         startActivity(intent);
     }
+
     //是否是横屏
     private boolean isLand(){
         if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE)
             return true;
         return false;
     }
+
 
     private void ChangeWordDetailFragment(String id){
         Bundle arguments = new Bundle();

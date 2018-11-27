@@ -25,7 +25,7 @@ public class Main2Activity extends Activity{
     private Button btn_search;
     private TextView searchresult;
     private String YouDaoUrl="";
-    //////
+
     private String YouDaoBaseUrl="http://fanyi.youdao.com/openapi.do";
     private String YouDaoKeyFrom="haobaoshui";
     private String YouDaokey="1650542691";
