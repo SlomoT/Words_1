@@ -23,7 +23,7 @@ public class EnglishWeb extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english_web);
 
-        webView=(WebView) webView.findViewById(R.id.webId);
+        webView=(WebView) findViewById(R.id.webId);
         webView.getSettings().setJavaScriptEnabled(true);
 
         //自适应手机屏幕

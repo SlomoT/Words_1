@@ -95,6 +95,7 @@ public class Main2Activity extends Activity{
     class Analyze extends Activity {
         public  void AnalyzingOfJson(String youDaoUrl) throws Exception {
             // TODO Auto-generated method stub
+
             HttpGet httpGet= new HttpGet(youDaoUrl);
             HttpResponse httpResponse= new DefaultHttpClient().execute(httpGet);
             if(httpResponse.getStatusLine().getStatusCode()==200){
